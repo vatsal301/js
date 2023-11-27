@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FORM</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>REGISTRATION FORM</h2>
+            <form>
+                <div class="form-group">
+                    <label for="text">First Name:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="fname"
+                        placeholder="Enter First Name"
+                        name="fname"
+                    >
+                    <span style="color: red;" id="fname_msg"></span>
+                </div>
+                <div class="form-group">
+                    <label for="text">Last Name:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="lname"
+                        placeholder="Enter Last Name"
+                        name="lname"
+                    >
+                    <span style="color: red;" id="lname_msg"></span>
+                </div>
+                <div class="form-group">
+                    <label for="text">Email:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter Email"
+                        name="email"
+                    >
+                    <span style="color: red;" id="email_msg"></span>
+                </div>
+                <div class="form-group">
+                    <label for="text">City:</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="city"
+                        placeholder="Enter City"
+                        name="city"
+                    >
+                    <span style="color: red;" id="city_msg"></span>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="pwd"
+                        placeholder="Enter password"
+                        name="pwd"
+                    >
+                    <span style="color: red;" id="pswd_msg"></span>
+                </div>
+                <div class="form-group">
+                    <label for="state">Select State</label>
+                    <select class="form-control" id="state">
+                        <option value="notuse">State</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Tamilnadu">Tamilnadu</option>
+                        <option value="Ooty">Ooty</option>
+                        <option value="Punjab">Punjab</option>
+                    </select>
+                    <span style="color: red;" id="state_msg"></span>
+                </div>
+                <button type="button" onclick="validate()" class="btn btn-success">SUBMIT</button>
+                <button type="submit" onclick="clear()" class="btn btn-primary">CLEAR</button>
+            </form>
+        </div>
+    </body>
+    <script src="./index.js"></script>
+</html>
