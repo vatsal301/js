@@ -16,6 +16,8 @@ function check() {
     console.log("your input is: ", input);
 }
 
+console.log("for git testing");
+
 function update() {
     // alert("update fun is run");
     // console.log(" fun run");
