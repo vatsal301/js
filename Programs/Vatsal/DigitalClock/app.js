@@ -18,12 +18,13 @@ function timeUpdate() {
   let d = new Date();
   //   console.log("d : ", d);
   let timeId = document.getElementById("time");
+  console.log(timeId);
   let h = d.getHours();
   let m = d.getMinutes();
   let s = d.getSeconds();
 //   console.log("type of s is:", typeof s);
   if (s <= 9) {
-    s = "0" + s;
+    s = "0" + s; 
     // console.log("in if type of s is:", typeof s);
   }
   if (h <= 9) {
